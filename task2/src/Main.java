@@ -19,6 +19,44 @@ public class Main {
         //todo дописать логику программы ниже.
 
 
+        if (first >= second) {
+            if (first >= third) {
+                greatest = first;
+                if (second >= third) {
+                    average = second;
+                    smallest = third;
+                }
+                else {
+                    average = third;
+                    smallest = second;
+                }
+            }
+            else {
+                greatest = third;
+                average = first;
+                smallest =second;
+            }
+        }
+        else {
+            if (second >= third) {
+                greatest = second;
+                if (first >= third) {
+                    average = first;
+                    smallest = third;
+                }
+                else {
+                    average = third;
+                    smallest = first;
+                }
+            }
+            else {
+                greatest = third;
+                average = second;
+                smallest = first;
+            }
+        }
+
+
 
 
 
